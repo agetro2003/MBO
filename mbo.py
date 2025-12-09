@@ -12,16 +12,18 @@ P is the ratio of monarch butterflies in Land
 '''
 
 
-def levy_flight(beta=1.5):
+beta=1.5
     # PASO 1: Calcular Sigma (La parte compleja con función Gamma)
     # Numerador de la fórmula de Mantegna
-    numerador = math.gamma(1 + beta) * math.sin(math.pi * beta / 2)
+numerador = math.gamma(1 + beta) * math.sin(math.pi * beta / 2)
     
     # Denominador de la fórmula
-    denominador = math.gamma((1 + beta) / 2) * beta * 2 ** ((beta - 1) / 2)
+denominador = math.gamma((1 + beta) / 2) * beta * 2 ** ((beta - 1) / 2)
     
     # Sigma final elevado a la potencia 1/beta
-    sigma = (numerador / denominador) ** (1 / beta)
+sigma = (numerador / denominador) ** (1 / beta)
+
+def levy_flight():
 
     # PASO 2: Generar u y v (Distribuciones Normales)
     # u sigue una distribución Normal(0, sigma^2)

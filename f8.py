@@ -1,11 +1,21 @@
 from mbo import MBO
 import time
+import math
 
-def fitness(position): 
-    time.sleep(0.001)
-    absolute_values = [abs(x_i) for x_i in position]
-    return max(absolute_values)
-    
+def fitness(position):
+    sum = 0
+    for x_i in position:
+        abs_x = abs(x_i)
+            
+        sqrt_x = math.sqrt(abs_x)
+
+        sin_x = math.sin(sqrt_x)
+
+        term = -x_i*sin_x
+
+        sum += term
+    return sum
+
 if __name__ == '__main__':
     start_time = time.time()
     num_dim = 30
