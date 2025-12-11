@@ -1,4 +1,4 @@
-from mbo import MBO
+from parallel_MBO import MBO
 import time
 import math
 
@@ -19,10 +19,9 @@ def fitness(position):
 if __name__ == '__main__':
     start_time = time.time()
     num_dim = 30
-    min_bound = -100
-    max_bound = 100
-
-    NP = 50
+    min_bound = -500
+    max_bound = 500
+    NP = 500
     p = 5/12
 
     iter = 500

@@ -106,6 +106,7 @@ class MBO:
                 else:
                     random_butterfly2 = random.choice(old_land2)
                     child_pos[k] = random_butterfly2.position[k]
+                
 
             child_fitness = self.fitness(child_pos)
 
@@ -147,6 +148,10 @@ class MBO:
 
                     if rand_val > self.bar:
                         child_pos[k] = child_pos[k] + alpha * (dx_vector[k] - 0.5)
+                        if child_pos[k] > self.max_p:
+                            child_pos[k] = self.max_p
+                        elif child_pos[k] < self.min_p:
+                            child_pos[k] = self.min_p
 
             child_fitness = self.fitness(child_pos)
 

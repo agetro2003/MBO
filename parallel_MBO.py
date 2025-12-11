@@ -65,7 +65,7 @@ def worker_migration(data):
     
 
 def worker_adjusting(data):
-    index, old_land1, old_land2, alpha, num_dim, p, bar, fitness = data
+    index, old_land1, old_land2, alpha, num_dim, p, bar, fitness, max_p, min_p = data
     best_butterfly = old_land1[0]
    
     parent = old_land2[index]
@@ -82,8 +82,12 @@ def worker_adjusting(data):
 
             if rand_val > bar:
                 
-                child_pos[k] = child_pos[k] + alpha * (dx_vector[k] - 0.5)
-
+                child_pos[k] = child_pos[k] + alpha * (dx_vector[k] - 0.5) 
+                if child_pos[k] > max_p:
+                    child_pos[k] = max_p
+                elif child_pos[k] < min_p:
+                    child_pos[k] = min_p
+                    
     child_fitness = fitness(child_pos)
 
     if child_fitness < parent.getFitness():
@@ -194,7 +198,9 @@ class MBO:
                 self.num_dim,
                 self.p,
                 self.bar,
-                self.fitness
+                self.fitness,
+                self.max_p,
+                self.min_p
             )
 
             tasks.append(task_data)
