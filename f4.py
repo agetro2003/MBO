@@ -1,8 +1,8 @@
-from mbo import MBO
+from parallel_MBO import MBO
 import time
 
 def fitness(position): 
-    time.sleep(0.001)
+    #time.sleep(0.001)
     absolute_values = [abs(x_i) for x_i in position]
     return max(absolute_values)
     
@@ -13,9 +13,10 @@ if __name__ == '__main__':
     max_bound = 100
 
     NP = 50
-    p = 5/12
+    iter = 1000  
 
-    iter = 500
+
+    p = 5/12
 
     bar = 5/12
 

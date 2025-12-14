@@ -1,0 +1,18 @@
+suite = 'bbob', funcId = 2, DIM = 2, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM2.dat, 1:50|8.9e+02, 2:50|3.0e+03, 3:50|5.0e+02, 4:50|3.9e+04, 5:50|3.6e+03, 71:50|3.5e+04, 72:50|4.0e+04, 73:50|7.6e+01, 74:50|3.0e+03, 75:50|5.3e+02, 76:50|9.1e+02, 77:50|2.9e+03, 78:50|7.1e+02, 79:50|1.3e+04, 80:50|3.1e+02
+suite = 'bbob', funcId = 2, DIM = 3, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM3.dat, 1:144|1.4e+04, 2:144|2.1e+04, 3:144|5.3e+03, 4:144|8.4e+03, 5:144|6.6e+02, 71:144|4.8e+03, 72:144|7.2e+03, 73:144|8.0e+03, 74:144|4.4e+03, 75:144|1.4e+04, 76:144|1.6e+04, 77:144|4.5e+03, 78:144|5.2e+02, 79:144|1.6e+03, 80:144|1.3e+03
+suite = 'bbob', funcId = 2, DIM = 5, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM5.dat, 1:238|3.6e+04, 2:238|5.8e+04, 3:238|4.6e+04, 4:238|7.6e+03, 5:238|2.1e+05, 71:238|5.5e+04, 72:238|1.9e+04, 73:238|2.9e+04, 74:238|5.3e+04, 75:238|1.5e+05, 76:238|2.3e+04, 77:238|7.0e+03, 78:238|6.5e+04, 79:238|4.3e+04, 80:238|3.4e+04
+suite = 'bbob', funcId = 2, DIM = 10, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM10.dat, 1:426|2.4e+05, 2:426|5.7e+05, 3:426|7.0e+05, 4:426|4.3e+05, 5:426|5.5e+05, 71:426|2.7e+05, 72:426|3.5e+05, 73:426|1.2e+05, 74:426|5.1e+04, 75:426|2.9e+05, 76:426|4.4e+05, 77:426|6.4e+05, 78:426|4.8e+05, 79:426|2.3e+05, 80:426|2.3e+05
+suite = 'bbob', funcId = 2, DIM = 20, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM20.dat, 1:802|1.6e+06, 2:802|1.6e+06, 3:802|1.3e+06, 4:802|1.4e+06, 5:802|3.2e+06, 71:802|6.1e+05, 72:802|8.1e+05, 73:802|1.3e+06, 74:802|1.0e+06, 75:802|1.5e+06, 76:802|1.1e+06, 77:802|1.6e+06, 78:802|1.5e+06, 79:802|2.3e+06, 80:802|6.8e+05
+suite = 'bbob', funcId = 2, DIM = 40, Precision = 1.000e-08, algId = 'ALG', coco_version = '2.8.2', logger = 'bbob', data_format = 'bbob-new2', settings = ''
+% 
+data_f2/bbobexp_f2_DIM40.dat, 1:1554|5.9e+06, 2:1554|7.3e+06, 3:1554|8.7e+06, 4:1554|8.3e+06, 5:1554|7.6e+06, 71:1554|4.5e+06, 72:1554|4.2e+06, 73:1554|5.3e+06, 74:1554|6.8e+06, 75:1554|2.6e+06, 76:1554|6.3e+06, 77:1554|7.5e+06, 78:1554|4.9e+06, 79:1554|5.2e+06, 80:1554|5.9e+06

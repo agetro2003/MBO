@@ -1,8 +1,9 @@
-from parallel_MBO import MBO
+from mbo import MBO
 import time
 import math
 
 def fitness(position):
+    time.sleep(0.001)
     sum = 0
     for x_i in position:
         abs_x = abs(x_i)
@@ -21,15 +22,20 @@ if __name__ == '__main__':
     num_dim = 30
     min_bound = -500
     max_bound = 500
-    NP = 500
+
+    # Numero de soluciones
+    NP = 50
+    # Numero de iteraciones
+    iter = 1000  
+    # Ratio de mariposas en zona 1
     p = 5/12
-
-    iter = 500
-
+    # Indicador de ajuste 
+    # (a mayor bar, mayor probabilidad de que se realice un vuelo de levy)
     bar = 5/12
-
+    # Periodo de migracion 
+    # (a mayor peri, mayor probabilidad hay de que se seleccione una mariposa de la zona 2)
     peri = 1.2
-
+    # Salto maximo que una mariposa puede hacer
     S_max = 2
 
     mbo = MBO(NP, p, num_dim, min_bound, max_bound, fitness, bar, peri, iter, S_max)
